@@ -1,1 +1,12 @@
-# Plik utworzony na prośbę użytkownika.
+#!/usr/bin/env python3
+"""Compatibility wrapper.
+
+Pozostawiony, aby ograniczyć konflikty przy mergowaniu starych branchy.
+Uruchamia docelowy skrypt: zadanie_1_big_data.py
+"""
+
+from runpy import run_path
+
+
+if __name__ == "__main__":
+    run_path("zadanie_1_big_data.py", run_name="__main__")
